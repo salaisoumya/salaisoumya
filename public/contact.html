@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="icon" href="./asserts/favicon.ico"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <div class="heading">
+    <h1> Donate Plastic</h1>
+  </div>
+    <div class="container1">
+
+        <form action="">
+            <h3>CONTACT US FOR PLASTIC DONATION</h3>
+            <input type="text" id="name" placeholder="Enter your name" required>
+            <input type="email" id="emailvalue" placeholder="Enter your email" required>
+            <input type="number" id="phone" placeholder="Phone number" required>
+            <textarea id="message" rows="4" placeholder="Enter your thoughts..."></textarea>
+            <input  id="btn" type="button" value="submit" onclick="Send()">
+        </form>
+
+        
+    </div>
+    <footer class="footer">
+      <div class="containerf">
+          <div class="footer-content">
+              <div class="footer-section">
+                  <h3>About Us</h3>
+                  <p>Our aim is to promote an eco-friendly environment. For donating recycled plastic, please contact us.</p>
+              </div>
+              <div class="footer-section">
+                  <h3>Contact</h3>
+                  <p>Email: info@ecokraft.com</p>
+                  <p>Phone No: 6369533242</p>
+              </div>
+              <div class="footer-section">
+                  <h3>Follow Us</h3>
+                  <div class="social-media-icons">
+                      <a href="#"><i class='bx bxl-facebook-square'></i></a>
+                      <a href="#"><i class='bx bxl-twitter'></i></a>
+                      <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                  </div>
+              </div>
+          </div>
+          <div class="footer-bottom">
+              <p>&copy; 2023 Ecokraft Ecommerce Website. All rights reserved.</p>
+          </div>
+      </div>
+  </footer>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    function Send(){
+
+  
+var name = document.getElementById("name").value;
+var email = document.getElementById("emailvalue").value;
+var contact = document.getElementById("phone").value;
+
+var mess = document.getElementById("message").value;
+
+var body = "Name: " + name + "<br/> Email:" + email + "<br/> Contact Number:" + contact + "<br/> Message:" + mess;
+ 
+console.log(body);
+ Email.send({
+
+  Host: "smtp.elasticemail.com",
+  Username : "salaisoumya.s2013@yahoo.com",
+    Password : "17CE9A789D7EF97519D1EA39B52301E8A58C",
+  To :     "salaisoumya.s2013@yahoo.com",
+  From :   "salaisoumya.s2013@yahoo.com",
+  Subject : "ecokraft plastic donation",
+  Body : body
+ }).then(
+     message =>{
+         if(message=='OK'){
+
+             swal("Successfull", "Your Data Successfull Received", "success");
+         }
+         else{
+
+             swal("Something Wrong", "Your Data is not Received", "error");
+         }
+     }
+   );
+
+ 
+
+}
+
+  </script>
+ 
+</body>
+</html>

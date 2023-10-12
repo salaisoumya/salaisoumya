@@ -1,0 +1,349 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Comaptible"
+        content="IE=edge">
+        <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+        <title>EcoKraft</title>
+        <link rel="stylesheet" href="./css/shoppingpage.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css' rel='stylesheet'>
+        <link rel="icon" href="./asserts/favicon.ico"/>
+    </head>
+    <body>
+      <div id="preloader"></div>
+
+      <div class="popup-background" id="popupBackground">
+        <div class="popup-ad" id="popupAd">
+          <div class="popup-content">
+            <span class="close" onclick="skipAd()">&times;</span>
+            <!-- Add your ad content here -->
+            <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjzVpOcXyi4qYWlRN-1DS8YIf2lLFXH-xsIs61XGY5oPSEvgiFEuww9KidJUwjN16vb97nJWtWQhgUdnqEC5ItzRRuWFytSlx6pyIvDcYLE_KUFGjBDtabb-VqXwPJPCee0Fj_aL1klgkgK24ttH8kmgoJABzRdaGACqOoIKcUU-Afcu1sx_wrLs8xyQ3s" alt="Advertisement">
+            <p>EcoKraft Special Offers!!1</p>
+          </div>
+        </div>
+      </div>
+      
+      
+        <!-- nav bar-->
+        <header>
+            <!-- nav-->
+           <div class="nav container">
+            <!--Logo-->
+            <a href="#" class="logo">EcoKraft</a>
+            <a href="best-seller.html" onclick="showLoadingScreen()" class="nav-dress">Jewelry</a>
+             <a href="gift-ideas.html" onclick="showLoadingScreen()"  class="nav-two">Gift Ideas</a>
+             <a href="tanjore-painting.html" onclick="showLoadingScreen()" class="nav-two">Thanjavur Painting</a>
+             <a href="Home-decor.html" onclick="showLoadingScreen()" class="nav-two">Home Decor</a>
+             <!--Cart icon-->
+             <i class='bx bx-cart' id="cart-icon" data-quantity="0"></i>
+             <!-- cart-->
+
+             <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+                <!-- content -->
+                <div class="cart-content">
+                    
+                </div>
+                <!--total-->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">Rs. 0</div>
+                </div>
+                <!-- Buy Button-->
+               <button type="button" class="btn-buy">Pay Now</button>
+               <!--close cart-->
+               <i class='bx bx-x' id="close-cart"></i>
+             </div>
+
+       </div>
+
+        </header>
+        <!--Products-->
+        <section class="shop container">
+            <h2 class="section-title">Shop Products</h2>
+            <!-- Shop Content-->
+            <div class="shop-content">
+                <!--box 1-->
+                <div class="product-box">
+                    <!-- Stripe need images that are online local server it will not show in stripe checkedout page we have to upload on line -->
+                    <img src="https://www.ecokaari.org/cdn/shop/products/2B6A8929_213x213.jpg?v=1679808749"
+                     alt=""
+                     class="product-img"
+                     >
+                  <h2 class="product-title">College Bag</h2>   
+                  <span class="price">Rs. 700</span>
+                  <i class='bx bx-cart-add add-cart '></i>
+
+                </div>
+                 <!--box 2-->
+                 <div class="product-box">
+                    <!-- Stripe need images that are online local server it will not show in stripe checkedout page we have to upload on line -->
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhR2ZmMPDq5Tqdxilu0oO92Jj3bJlqb8fPVTyCXv0x5dkjgVfN9b2npM-NV2pSJCRFTO-90q_Cl2zOo6HbsPzgoZgH8V2fdi02AFBxxzYJSTa3VlW64YHA_bh0XZu6dVg-OJfsgVGyXYVINqyt2tO8VcU1qwsgETJurRDuIeEbpXSj99FCOMGHSSkVWpUU/s1600/product2.png"
+                     alt=""
+                     class="product-img"
+                     >
+                  <h2 class="product-title">Hand Bag</h2>   
+                  <span class="price">Rs. 900</span>
+                  <i class='bx bx-cart-add add-cart '></i>
+
+                </div>
+
+                <!--box 3-->
+                <div class="product-box">
+                    <!-- Stripe need images that are online local server it will not show in stripe checkedout page we have to upload on line -->
+                    <img src="https://www.ecokaari.org/cdn/shop/files/44_229x229.png?v=1679807953"
+                     alt=""
+                     class="product-img"
+                     >
+                  <h2 class="product-title">College Bag</h2>   
+                  <span class="price">Rs. 900</span>
+                  <i class='bx bx-cart-add add-cart '></i>
+
+                </div>
+                 <!--box 4-->
+                <div class="product-box">
+                    <!-- Stripe need images that are online local server it will not show in stripe checkedout page we have to upload on line -->
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhcig_3KrU78FhUmM8VOsz51VO8x7578gfmn2zEayY5CyzXll93O-wHP-xGDTQpCLzjVncXw2N_fOPYjqB33MpxAc425t3R2u6wZqZxCcT5vZ1HJp-BH1dzgQs6cdgzsQgyBNfP8SdCbuvVgPWzRBhdkAp363TtQnvYMHZgv3lPc2rRevcyiYG3AAFHeRg/s1600/product3.png"
+                     alt=""
+                     class="product-img"
+                     >
+                  <h2 class="product-title">Utility Pouch</h2>   
+                  <span class="price">Rs. 400</span>
+                  <i class='bx bx-cart-add add-cart '></i>
+
+                </div>
+                  <!--box 5-->
+                <div class="product-box">
+                    <!-- Stripe need images that are online local server it will not show in stripe checkedout page we have to upload on line -->
+                    <img src=" https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhw_r7ZHXwmvHsO2uzL_VH7goAGqpmiabEKN89wQn4gcqL77F01aSXPm4y934VYVGxE_L0tVlWDxzwICUzU28NjjcttXk0r3FwfxnG7MWJEddpU80G3uxpr-EkVt6yh__-nHwhN_HamgPPZeseKZyaHHnM-XWcTdVJLjbRJB3r-xF8nn4K2SCf8eMLSHvQ/s1600/product4.png"
+                     alt=""
+                     class="product-img"
+                     >
+                  <h2 class="product-title">Market Bag</h2>   
+                  <span class="price">Rs. 800</span>
+                  <i class='bx bx-cart-add add-cart '></i>
+
+                </div>
+                   <!--box 6-->
+                <div class="product-box">
+                    <!-- Stripe need images that are online local server it will not show in stripe checkedout page we have to upload on line -->
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWk5IC2XgRHM-XQ16rs-YQ77ceLfvAMcXRuOejyNdROKPt3Ujdz0ydi_Zm6L3YmKf_AvB5VSrRNCv3u2l0zlWDQvViX_ydag7N8gdSkCCQpohqdd66KIiRgLRVQ7eFCFqyUAYzrdly9s5Ak7KelAG_ZNB7cnUUqMocpsKe86PTqhrOEW2iPPcp9vZZpiE/s1600/product5.png"
+                     alt=""
+                     class="product-img"
+                     >
+                  <h2 class="product-title"> Fashion Hand Bag</h2>   
+                  <span class="price">Rs. 700</span>
+                  <i class='bx bx-cart-add add-cart '></i>
+
+                </div>
+                  <!--box 7-->
+                  <div class="product-box">
+                    <!-- Stripe need images that are online local server it will not show in stripe checkedout page we have to upload on line -->
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmdrjTKDnPEMjUxhi-6DbbmFs7ywNA58KOUUjvQ7pZWGV-NjyUyQz4c8GpXGsQumiGlcNoXiAz_xGS13RStUagjcGWy9EHo3xHjxW_NQ0AuHV8cuA6XARThBdtv2ji3CpSBk7BqMTHKxTCJHYD1K8OcuBSX0f64fHqBg9e3yXpmvQtbyNw1Mb2fo-OF4g/s1600/product6.png"
+                     alt=""
+                     class="product-img"
+                     >
+                  <h2 class="product-title">Plant Basket</h2>   
+                  <span class="price">Rs. 300</span>
+                  <i class='bx bx-cart-add add-cart '></i>
+
+                </div>
+
+                  <!--box 8-->
+                  <div class="product-box">
+                    <!-- Stripe need images that are online local server it will not show in stripe checkedout page we have to upload on line -->
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibTSrge74WJMrvfAT-8E6TW0B26DMx16-McndyzbIgc6HmRpmt9QKb-ThV7bMKHiBJZBHd_5Guqr7zwAr5iUIRzAC2NXAmO7nNefedORj-Q1bkJRJRIk5uAOE0g0lyh5juJkVUM0WUNDKLYeGTj5t-GhPTxHMkzRcGHeJJU3t3sWhXia-zDLjfO1tp66k/s1600/product7.png"
+                     alt=""
+                     class="product-img"
+                     >
+                  <h2 class="product-title">Laptop Bag</h2>   
+                  <span class="price">Rs. 1000</span>
+                  <i class='bx bx-cart-add add-cart '></i>
+
+                </div>
+                <!--box 9-->
+                <div class="product-box">
+                    <!-- Stripe need images that are online local server it will not show in stripe checkedout page we have to upload on line -->
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6UTaOI3HfyK8ya4VPpjqlSJzt-2pQ0FPDUuo2PqWSqyin-j5iiW7YRCSnGR26KNn6b5S0ymzxgXV46jaDZPr6U9tX1CH-DKErXPzm_7DJLX7rZD9OTtVjyf6QCE9qMqYhREHncMPXajX47ML_ji9-H-zDg1FSX5dvi6edTMRY8awzdVg5t_vIROh8cDA/s1600/product8.png"
+                     alt=""
+                     class="product-img"
+                     >
+                  <h2 class="product-title">Sling Bag</h2>   
+                  <span class="price">Rs. 500</span>
+                  <i class='bx bx-cart-add add-cart '></i>
+
+                </div>
+            
+                <!--box 10-->
+                <div class="product-box">
+                    <!-- Stripe need images that are online local server it will not show in stripe checkedout page we have to upload on line -->
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjnEPIj83gvngGQQHNWPKRdZ0_Lxni7gFFQWpggu0BZS42vTfg2WhA-pwrr0qaAn60BUh5lHBSynGdIX8mZKmY5tz_-fQrN9G4GvbyY9vVsgpIID4aLNSK-t_SqZhQDSGOuA2fkwCmdCASli8FMISPwXyCOq7XNxweTkSFWP1t1XTXVYAPhcgUKf1WoD8Y/s1600/product9.png"
+                     alt=""
+                     class="product-img"
+                     >
+                  <h2 class="product-title">Utility Pouch</h2>   
+                  <span class="price">Rs. 200</span>
+                  <i class='bx bx-cart-add add-cart '></i>
+
+                </div>
+                 <!--box 11-->
+                 <div class="product-box">
+                    <!-- Stripe need images that are online local server it will not show in stripe checkedout page we have to upload on line -->
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgzM33Aoie0COMZ2kngK1z-Wg9sh8dfSDru7ouTyxaZgRTbNrOZ_PqNIZPZ2LMlt1QiMZumgBMhtRtwwOu7dpBSf0rtp_q_z6IihBF0Hm9DZ1jn1fXcArj47a33Cz75mKuQ_TqbR_unat_XRqW6H_s5GXDALScVM-voHy7xC8HavHTj9q5HWtMMHHwFSkc/s1600/product10.png"
+                     alt=""
+                     class="product-img"
+                     >
+                  <h2 class="product-title">water Bottle Bag</h2>   
+                  <span class="price">Rs. 400</span>
+                  <i class='bx bx-cart-add add-cart '></i>
+
+                </div>
+
+                <!--box 12-->
+                <div class="product-box">
+                    <!-- Stripe need images that are online local server it will not show in stripe checkedout page we have to upload on line -->
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9UioYkdKeVnHZSsC_Ea6_E8TfPYwHA-drqoBCZVub2SMbyYmZUFRDy8jyegfWmOl0WKfTG1NCGlEPT7M3g9wPBQ3jQ9daFEhgckvSEeWLxJsLR6PXuBr066t7NRwFxsD4jKXmDKUZgOJBU_sOX_DI9iIbhwWRJ_AqxkWiLaO1TBGCS3sq8ZugnoNKX3o/s1600/product11.png"
+                     alt=""
+                     class="product-img"
+                     >
+                  <h2 class="product-title">Laptop Pouch</h2>   
+                  <span class="price">Rs. 600</span>
+                  <i class='bx bx-cart-add add-cart '></i>
+
+                </div>
+
+                <!--box 13-->
+                <div class="product-box">
+                    <!-- Stripe need images that are online local server it will not show in stripe checkedout page we have to upload on line -->
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0pJya-6KiGdnqUwWSoFcU-mXu_XVCe_XxUqel7aDq5K4kn80ErBD3Hs2sKEMeFtBqPYWHrmnfemEs7GZQ5CIc8rgMpZhy7SVZ3WhEHjy-Rd9v9_qktqUUn3CtqTzbaCB1YxOXvVO1BlmxCmixzEXbP-1BGUFhhAszmYhVoxQKIu7HmRVHIGGlUxjmGho/s1600/product12.png"
+                     alt=""
+                     class="product-img"
+                     >
+                  <h2 class="product-title">Culinary kit</h2>   
+                  <span class="price">Rs. 400</span>
+                  <i class='bx bx-cart-add add-cart '></i>
+
+                </div>
+                 
+                <!--box 14-->
+                <div class="product-box">
+                    <!-- Stripe need images that are online local server it will not show in stripe checkedout page we have to upload on line -->
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj22VWRYPUJiArYsDPU_bmJYtjfbojQrno7mzIutSXS-rvLYG2e_-5_yeHUB82CIYo1AIppY5dFbA4_iNPUDnADK0QsqULZxIXb-jyYgRZaXVXNMlRXHH6hnPuXfOIvHXpxuUL_wssNJMnFtFh6L9HD1du885erUPU6OdmKRE3RsaUwzSqfGYV70XflcYU/s1600/product13.png"
+                     alt=""
+                     class="product-img"
+                     >
+                  <h2 class="product-title">wallet</h2>   
+                  <span class="price">Rs. 600</span>
+                  <i class='bx bx-cart-add add-cart '></i>
+
+                </div>
+
+                <!--box 15-->
+                <div class="product-box">
+                  <!-- Stripe need images that are online local server it will not show in stripe checkedout page we have to upload on line -->
+                  <img src="https://blogger.googleusercontent.com/img/a/AVvXsEgYLaOAUdrqwy5yC-dRuWYyUtxUbv5IAcYtZDVlAvChE3EuYA3hBsXLg0t_WPgan1bNdwNGPx-7GSqGqqrMCBgcZsklIVrHVsFtebdJRhfzcwEaTJ8KH1eryE96JQwP1OTGCpIlik16pbcy1F4pYxtle5S1kiYmMTf9YTzz7JygvjUuGhtpOZgkCZVVrBE"
+                   alt=""
+                   class="product-img"
+                   >
+                <h2 class="product-title">Book Tote</h2>   
+                <span class="price">Rs. 900</span>
+                <i class='bx bx-cart-add add-cart '></i>
+
+              </div>
+               
+                   <!--box 16-->
+                   <div class="product-box">
+                    <!-- Stripe need images that are online local server it will not show in stripe checkedout page we have to upload on line -->
+                    <img src="https://blogger.googleusercontent.com/img/a/AVvXsEgfc-TNbwUAx3htU6am9boE0P-5uTbIMGWPD4vtm2Ncjrc0LfhV4H8MgT0l2r5N7cSbLzGhKJ6FqLue7LYKFIntdx-FeB-vn2O2mNj7xkiA3pjkJayf8vL5XLZ-jnwcxON0Xs8BY3Ulvu_lYDWjXgmZIKMSjoni9kzlQgeo5qTfcgT_QMvmfiMFYxCF1RU"
+                     alt=""
+                     class="product-img"
+                     >
+                  <h2 class="product-title">Beach Tote</h2>   
+                  <span class="price">Rs. 1000</span>
+                  <i class='bx bx-cart-add add-cart '></i>
+  
+                </div>
+
+                
+
+            </div>
+        </section>
+
+        <footer class="footer">
+          <div class="containerf">
+            <div class="footer-content">
+              <div class="footer-section">
+                <h3>About Us</h3>
+                <p>our Aim is to bring eco-friendly environment.
+                  for donating recycled plastic contact us.
+                </p>
+              </div>
+              <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: info@Ecokraft.com</p>
+                <p>Phone: 6369533242</p>
+              </div>
+              <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-media-icons">
+                  <a href="#"><i class='bx bxl-facebook-square'></i></a>
+                  <a href="#"><i class='bx bxl-twitter'></i></a>
+                  <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="footer-bottom">
+              <p> 2023 Ecokraft Ecommerce Website. All rights reserved.</p>
+            </div>
+          </div>
+        </footer>
+        <!--Link to js -->
+
+        <script>
+          var loader = document.getElementById("preloader");
+ 
+           // Simulate a delay (e.g., 3 seconds) before hiding the preloader
+            setTimeout(function() {
+                      loader.style.display = "none";
+                },   5000); // 3000 milliseconds = 3seconds
+ 
+                function showLoadingScreen() {
+               var loadingScreen = document.getElementById('preloader');
+                   loadingScreen.style.display = 'flex'; // or 'block', depending on your CSS
+                         }
+ 
+                    // Hide loading screen when the page is fully loaded
+                    window.addEventListener('load', function() {
+                    var loadingScreen = document.getElementById('preloader');
+                    loadingScreen.style.display = 'none';
+                     });
+                     
+                     // Function to show the pop-up ad and background
+                             function showPopupAd() {
+                                var popupBackground = document.getElementById('popupBackground');
+                                   popupBackground.style.display = 'block';
+                                          }
+
+                                           // Function to skip the pop-up ad and hide the background
+                                                    function skipAd() {
+                                             var popupBackground = document.getElementById('popupBackground');
+                                                popupBackground.style.display = 'none';
+                                                  }
+
+                                                // Call the showPopupAd function to display the ad after a certain time
+                                                setTimeout(showPopupAd, 5000); // 5000 milliseconds = 5 seconds
+
+
+                     
+
+         </script>
+
+        <script src="./javascript/shoppinpage.js"></script>
+        <script src="./javascript/cart.js"></script>
+       
+        
+
+    </body>
+</html> 

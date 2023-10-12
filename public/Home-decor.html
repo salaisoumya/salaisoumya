@@ -1,0 +1,323 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Comaptible"
+        content="IE=edge">
+        <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+        <title>EcoKraft</title>
+        <link rel="stylesheet" href="./css/shoppingpage.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="icon" href="./asserts/favicon.ico"/>
+        <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css' rel='stylesheet'>
+    </head>
+    <body>
+      
+      <div class="popup-background" id="popupBackground">
+        <div class="popup-ad" id="popupAd">
+          <div class="popup-content">
+            <span class="close" onclick="skipAd()">&times;</span>
+            <!-- Add your ad content here -->
+            <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjzVpOcXyi4qYWlRN-1DS8YIf2lLFXH-xsIs61XGY5oPSEvgiFEuww9KidJUwjN16vb97nJWtWQhgUdnqEC5ItzRRuWFytSlx6pyIvDcYLE_KUFGjBDtabb-VqXwPJPCee0Fj_aL1klgkgK24ttH8kmgoJABzRdaGACqOoIKcUU-Afcu1sx_wrLs8xyQ3s" alt="Advertisement">
+            <p>EcoKraft Special Offers!!1</p>
+          </div>
+        </div>
+      </div>
+
+        <!-- nav bar-->
+        <header>
+            <!-- nav-->
+           <div class="nav container">
+            <!--Logo-->
+            <a href="#" class="logo">EcoKraft</a>
+            
+             <!--Cart icon-->
+             <i class='bx bx-cart' id="cart-icon" data-quantity="0"></i>
+             <!-- cart-->
+
+             <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+                <!-- content -->
+                <div class="cart-content">
+                    
+                </div>
+                <!--total-->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">Rs. 0</div>
+                </div>
+                <!-- Buy Button-->
+               <button type="button" class="btn-buy">Pay Now</button>
+               <!--close cart-->
+               <i class='bx bx-x' id="close-cart"></i>
+             </div>
+
+       </div>
+
+        </header>
+        <!--Products-->
+        <section class="shop container">
+            <h2 class="section-title">Indian Home Decor</h2>
+            <!-- Shop Content-->
+            <div class="shop-content">
+                <!--box 1-->
+                <div class="product-box">
+                    <!-- Stripe need images that are online local server it will not show in stripe checkedout page we have to upload on line -->
+                    <img src="https://blogger.googleusercontent.com/img/a/AVvXsEg1RSvnL7vyf6B9SznY7Evs71ikPZxQAnfMZGeTysm8cjhQ6jlW6zReHTdBTeMfbg24JVxzNoKwBB3cTp7pPshKJiup6iBndXqcmH4jRKfgW05XnuMk9VhxiUciZJ2PGScLa53HY8yzSoRwq5-aRso4q0ZtcLhcq2-oP_pJHKH7J-bzjXc3R9jy4bRptqA"
+                     alt=""
+                     class="product-img"
+                     >
+                  <h2 class="product-title">Antique brass camel</h2>   
+                  <span class="price">Rs. 5000</span>
+                  <i class='bx bx-cart-add add-cart '></i>
+
+                </div>
+                 <!--box 2-->
+                 <div class="product-box">
+                    <!-- Stripe need images that are online local server it will not show in stripe checkedout page we have to upload on line -->
+                    <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjtvSVW1IdVN-jB9Bh9dAoAgCV93zh7xs6xfsPYxRMNbRjjSg7-jaGAxE64hyyc1mAnlspIKDRBWmVfFwL14M-gvwzR8crkMrIimbKGdRaS5e42WlXzG6OQMeOP7ADxqkcnnFiYBUMvJsZOlaoh-MQ0vDOoJR7Pi_2WciM2E7SV7FmLR14ojnbWisaT0d8"
+                     alt=""
+                     class="product-img"
+                     >
+                  <h2 class="product-title">mini auto decor</h2>   
+                  <span class="price">Rs. 1900</span>
+                  <i class='bx bx-cart-add add-cart '></i>
+
+                </div>
+
+                <!--box 3-->
+                <div class="product-box">
+                    <!-- Stripe need images that are online local server it will not show in stripe checkedout page we have to upload on line -->
+                    <img src="https://blogger.googleusercontent.com/img/a/AVvXsEhHvT3A4j_FEgNoxH-TVTLFOgt7xfS2dwzS3dt0wdFT12yYiSCXm1btaQ1EvwpPSipzeSNdVVlA_QPHlWuvNaz9eZEWDN0cDCg2rE4RngXiKU_NFsiyWYoMBPvzcUfXBY7EAkIqmtXqDwF95YbEPsv84USvzUQW9UK5VUho71z0yJLa6W3fHR2KRHyVQlg"
+                     alt=""
+                     class="product-img"
+                     >
+                  <h2 class="product-title">sun wall sticker</h2>   
+                  <span class="price">Rs. 1500</span>
+                  <i class='bx bx-cart-add add-cart '></i>
+
+                </div>
+                 <!--box 4-->
+                <div class="product-box">
+                    <!-- Stripe need images that are online local server it will not show in stripe checkedout page we have to upload on line -->
+                    <img src="https://blogger.googleusercontent.com/img/a/AVvXsEiFxTwsUi4MYwrWaLlPcJw_MAppSw-Z0YUfhQcu8P-aGNIYVX5zC-iBRIWyb98gnLarYGSSYgtFypqxFUf1l7k8-eBvk7SO14NkNHrEL-a9Fpsa9pAdALKPkX_pqQuxjaCnH4lRFOj2To4AE8ZIGACSoR1ba4haSln5Br_JfBdh4xE_Sglgf0fVHyy4A-8"
+                     alt=""
+                     class="product-img"
+                     >
+                  <h2 class="product-title">Antique nadarajar statue</h2>   
+                  <span class="price">Rs. 5700</span>
+                  <i class='bx bx-cart-add add-cart '></i>
+
+                </div>
+                  <!--box 5-->
+                <div class="product-box">
+                    <!-- Stripe need images that are online local server it will not show in stripe checkedout page we have to upload on line -->
+                    <img src=" https://blogger.googleusercontent.com/img/a/AVvXsEgJq_YvK4HOZehcmlcukj1TrTvrFqxTld6zaIjzd1SJVfoN3HPUzP8loShvoLzLWacOBItt3JRpPdDEsZ4YfLjcmD_4P8LMLAHZtEcl2HGBddyStlIKedmAxIjpf60tMX6p8jU0kX0SQgORFhVNDS1p7b9VXTk796oJ8iuKW65UCUA1N4N0HSATvQ5GI7o"
+                     alt=""
+                     class="product-img"
+                     >
+                  <h2 class="product-title">peacock lamp</h2>   
+                  <span class="price">Rs. 1800</span>
+                  <i class='bx bx-cart-add add-cart '></i>
+
+                </div>
+                   <!--box 6-->
+                <div class="product-box">
+                    <!-- Stripe need images that are online local server it will not show in stripe checkedout page we have to upload on line -->
+                    <img src="https://blogger.googleusercontent.com/img/a/AVvXsEha9fhRADY1NGOTh_A5ZCR_kVZAZj_G6a69GjmfJ676dYBT0RfoK1CzXjVY6FDAxxJbJhkIn8nfk5i-yVZP4geZE78yhe8QunG0PjUdKLGoEJO17uesEzYFRWd1XocjNhhvtaqvIjAyET7gAQYPvcqu2DBV9_TssPEYJ8CcrxgWY_vooA5ZLD_hxctb4wc"
+                     alt=""
+                     class="product-img"
+                     >
+                  <h2 class="product-title">wall decor</h2>   
+                  <span class="price">Rs. 500</span>
+                  <i class='bx bx-cart-add add-cart '></i>
+
+                </div>
+                  <!--box 7-->
+                  <div class="product-box">
+                    <!-- Stripe need images that are online local server it will not show in stripe checkedout page we have to upload on line -->
+                    <img src="https://blogger.googleusercontent.com/img/a/AVvXsEhUgHepyDSP3UDSFLvoqoQgpPzbksGSdsUgjbiUEix0AXmWmL1KTZdZc3aBmBy8bjiP6FP5WnQspZSpRas3xOR-Ece8UfqEStQol-jEl8XEE-PCIbSi-Wlp9tMxy8i_xuBHinbe4r4mcibjyx2ASveqcZ7vVGgTyh2lxiZpGKj8FIbt-9tyzQLU1jnN9yQ"
+                     alt=""
+                     class="product-img"
+                     >
+                  <h2 class="product-title">Brass Antique duck</h2>   
+                  <span class="price">Rs. 2300</span>
+                  <i class='bx bx-cart-add add-cart '></i>
+
+                </div>
+
+                  <!--box 8-->
+                  <div class="product-box">
+                    <!-- Stripe need images that are online local server it will not show in stripe checkedout page we have to upload on line -->
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/51xiJgQFmUL._SY879_.jpg"
+                     alt=""
+                     class="product-img"
+                     >
+                  <h2 class="product-title">Thanjavur doll</h2>   
+                  <span class="price">Rs. 2000</span>
+                  <i class='bx bx-cart-add add-cart '></i>
+
+                </div>
+                <!--box 9-->
+                <div class="product-box">
+                    <!-- Stripe need images that are online local server it will not show in stripe checkedout page we have to upload on line -->
+                    <img src="https://blogger.googleusercontent.com/img/a/AVvXsEgfdk1hxHOenhmC-UFAqhIbm7DNi_qxi1XRG-bwj_aYszJFXPBvLUNDj1x_X6ABlR_1abt5ypxbWAo8IPx8g0e5vCkYwIVlMDPbAJ05dMrH4Z1L2_wIp9G88Ya4I9_m72UK-TMalFIQgUZQQ1RoBm3fjxGGDo3xQP4UX8PKm8Av-LiYHZrAnXJOTNBg0c8"
+                     alt=""
+                     class="product-img"
+                     >
+                  <h2 class="product-title">wall decor</h2>   
+                  <span class="price">Rs. 2000</span>
+                  <i class='bx bx-cart-add add-cart '></i>
+
+                </div>
+            
+                <!--box 10-->
+                <div class="product-box">
+                    <!-- Stripe need images that are online local server it will not show in stripe checkedout page we have to upload on line -->
+                    <img src="https://blogger.googleusercontent.com/img/a/AVvXsEh7gryRtF4UMHODOLsuutCSrn2eakClpTcqUVXGkHx3v0vxPSM9VuHadGHmXJQ0GW1mCd-_3hhmq8Dl6zC-BvwSwjVzyGsqh5-wurbhKrXuVZOKdUY7a7JSj0K1TpxJSjJ-AsG8j9KKvsx6fZKiedhnBfphjPeRIyK_fAfknarhS9JJEA9tI799WT78w1g"
+                     alt=""
+                     class="product-img"
+                     >
+                  <h2 class="product-title">Antique brass Viniyagar</h2>   
+                  <span class="price">Rs. 5000</span>
+                  <i class='bx bx-cart-add add-cart '></i>
+
+                </div>
+                 <!--box 11-->
+                 <div class="product-box">
+                    <!-- Stripe need images that are online local server it will not show in stripe checkedout page we have to upload on line -->
+                    <img src="https://blogger.googleusercontent.com/img/a/AVvXsEh2Ex0ryZQXoPadYk1-QO3xYOtdXtpIcUz2oKyB5AxFw7W-tyjHU8hP8XOxsYa3j4rcZ52zOXEKen4qSpz7pVvkn2wTVlN26v-DdMySSbyR-hgXwThe-xbr_gaknFphzmLsWK05p8WykJAHegrIhDVCg5fMO55EXZ2e137m2P8QYfHLBRk67oAUZbUuYoQ"
+                     alt=""
+                     class="product-img"
+                     >
+                  <h2 class="product-title">HandCrafted Mirror</h2>   
+                  <span class="price">Rs. 700</span>
+                  <i class='bx bx-cart-add add-cart '></i>
+
+                </div>
+
+                <!--box 12-->
+                <div class="product-box">
+                    <!-- Stripe need images that are online local server it will not show in stripe checkedout page we have to upload on line -->
+                    <img src="https://blogger.googleusercontent.com/img/a/AVvXsEiLJ2TwfQB-TGpaLyJTbbpjhiLBVaBEqIvJ7uC8-l6cbShKIy_XaB3iaLXmdw1PCB52vInR35b1qBe2PMWhfa5Bl6uLgUxMMloXWc17EKbVtxW2vLdccY4ZLYgdYPS9pEgYfKsmo_x_C6KX4ZQOLyNW6rdEYxsz1ab6Ws5-XcEvOxqQhCF7koaOBaRqY_M"
+                     alt=""
+                     class="product-img"
+                     >
+                  <h2 class="product-title">HandCrafted Pots</h2>   
+                  <span class="price">Rs. 2800</span>
+                  <i class='bx bx-cart-add add-cart '></i>
+
+                </div>
+
+                <!--box 13-->
+                <div class="product-box">
+                    <!-- Stripe need images that are online local server it will not show in stripe checkedout page we have to upload on line -->
+                    <img src="https://blogger.googleusercontent.com/img/a/AVvXsEiDSToH9BNUYMIDUy8NcdPOSPyeRuNRJNq_T-2kYSw9zdWTjhIi5fYsW2Kr5E4T4jjyaEYYDAZDBn4dyx5YrVD1sodAntt6_gT6f9HItk0I-D6zIqbaiU0GkkKGSrBLTMBYm2RTfcGFuzwXheWZ9Z6-VVL2_fvsUlhIhETHoJpbcHpjTL5zyMdc0kpaCNw"
+                     alt=""
+                     class="product-img"
+                     >
+                  <h2 class="product-title">Antique Pot</h2>   
+                  <span class="price">Rs. 2000</span>
+                  <i class='bx bx-cart-add add-cart '></i>
+
+                </div>
+                 
+                <!--box 14-->
+                <div class="product-box">
+                    <!-- Stripe need images that are online local server it will not show in stripe checkedout page we have to upload on line -->
+                    <img src="https://blogger.googleusercontent.com/img/a/AVvXsEgvqh83umAzyJ6B0rVPcbwEP3i2cuJWfbnSGNLiyJAGCWN5c2WUVORCPiLjelyHNjHKzI8TvlnUt6otjgfB_Wz9c2eiYICec21PTTZN8QWV9YiliQDKuRw_J15vejSTmlFY3_Da_DNXKKK0MNEbMA_ArdQ991hfOiZjCFH6gJ5tQ0vakZJnyZ2A3xxx5WU"
+                     alt=""
+                     class="product-img"
+                     >
+                  <h2 class="product-title">HandCrafted antique mirror</h2>   
+                  <span class="price">Rs. 2600</span>
+                  <i class='bx bx-cart-add add-cart '></i>
+
+                </div>
+
+                <!--box 15-->
+                <div class="product-box">
+                  <!-- Stripe need images that are online local server it will not show in stripe checkedout page we have to upload on line -->
+                  <img src="https://blogger.googleusercontent.com/img/a/AVvXsEh-89yG7FTzS_BU8GwwWgk8dZ5rKvJLi7OLgbEJ-x_HzHHcGNfQ6aqmaHptVSxdmgrMGwaOHuIHqT0Gr9yrRXeYjKFosnUtpq6weFbwL2RTzrVzwZat56BUohlFry73PWAPSf5AH702y7sezAxPaZQR-ll833ypAhZSlSmjgjOKnr5wA3m64Sx8dtEOEIk"
+                   alt=""
+                   class="product-img"
+                   >
+                <h2 class="product-title">Handcrafted art pot</h2>   
+                <span class="price">Rs. 1900</span>
+                <i class='bx bx-cart-add add-cart '></i>
+
+              </div>
+               
+                   <!--box 16-->
+                   <div class="product-box">
+                    <!-- Stripe need images that are online local server it will not show in stripe checkedout page we have to upload on line -->
+                    <img src="https://blogger.googleusercontent.com/img/a/AVvXsEgmXQpWe8eXpEb6hm4zGUh3s7mGQQXPjQ1OAeSJIygVZqY3qBwJ8jSACKwmdfhucSqMZNIZFivmPKe5wyCkJfolpGJLfjM9WscUzK1xamy0Fer2hrFnQpIqxWK3PKeB6a4I1NUBqSxSwj9fynMp9J1Ku0-4HePluY2EZUQH3MErRmvUQQ1IPb_I0dGaKOU"
+                     alt=""
+                     class="product-img"
+                     >
+                  <h2 class="product-title">Antique Tea pot</h2>   
+                  <span class="price">Rs. 5000</span>
+                  <i class='bx bx-cart-add add-cart '></i>
+  
+                </div>
+
+                
+
+            </div>
+        </section>
+
+        <footer class="footer">
+          <div class="containerf">
+            <div class="footer-content">
+              <div class="footer-section">
+                <h3>About Us</h3>
+                <p>our Aim is to bring eco-friendly environment.
+                  for donating recycled plastic contact us.
+                </p>
+              </div>
+              <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: info@ecokraft.com</p>
+                <p>Phone: 6369533242</p>
+              </div>
+              <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-media-icons">
+                  <a href="#"><i class='bx bxl-facebook-square'></i></a>
+                  <a href="#"><i class='bx bxl-twitter'></i></a>
+                  <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="footer-bottom">
+              <p>&copy; 2023 Ecokraft Ecommerce Website. All rights reserved.</p>
+            </div>
+          </div>
+        </footer>
+        <!--Link to js -->
+        <script>
+          // Function to show the pop-up ad and background
+          function showPopupAd() {
+                                var popupBackground = document.getElementById('popupBackground');
+                                   popupBackground.style.display = 'block';
+                                          }
+
+                                           // Function to skip the pop-up ad and hide the background
+                                                    function skipAd() {
+                                             var popupBackground = document.getElementById('popupBackground');
+                                                popupBackground.style.display = 'none';
+                                                  }
+
+                                                // Call the showPopupAd function to display the ad after a certain time
+                                                setTimeout(showPopupAd, 5000); // 5000 milliseconds = 5 seconds
+
+
+
+        </script>
+
+        <script src="./javascript/shoppinpage.js"></script>
+        
+        <script src="./javascript/cart.js"></script> 
+      
+    </body>
+</html> 
